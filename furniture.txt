@@ -1,0 +1,9 @@
+chair
+table
+bench
+desk
+laptop
+watch
+key
+code
+dict
