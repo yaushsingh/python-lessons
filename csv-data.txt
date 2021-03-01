@@ -1,0 +1,5 @@
+name,place,x,y,z,elevation,displacement
+pokhara,lamachaur,34,35,26,0.5
+kathmandu,buddhanagar,24,56,89,0.66
+kohalpur,banke,35,32,26,0.89
+bhaktapur,tikathali,28,45,53,0.76
