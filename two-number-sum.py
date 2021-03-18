@@ -23,10 +23,33 @@ def twoNumberSum(array,targetSum):
 
     return []
 
+#o(nlog(n)) time / O(1) space 
+def tns(array,targetSum):
+    array.sort()
+    left = 0
+    right = len(array)-1
+    while left < right:
+        currentSum = array[left]+ array[right]
+        if currentSum == targetSum:
+            return [array[left],array[right]]
+        elif currentSum < targetSum:
+            left += 1 
+        elif currentSum > targetSum:
+            right -= 1
+    return []
+
+
+
+
 array = []
 lenarray = int(input("please enter length of array"))
-for i in range(lenarray):
-    x = int(input("please enter elements"))
-    array.append(x)
+try:
+    for i in range(lenarray):
+        x = int(input("please enter elements"))
+        array.append(x)
+except ValueError:
+    exit ('Enter integer only')
+
 targetSum = int(input('enter the target sum'))
 print(twoNumberSum(array,targetSum))    
+print(tns(array,targetSum))
