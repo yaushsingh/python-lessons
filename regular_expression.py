@@ -35,6 +35,11 @@ price_number = float(matches.group(1))
 price_with_comma = "price : 12,689.09"
 search_exp = "([0-9,]*\.[0-9])"
 match = re.search(search_exp,price_with_comma)
-price_without_comma = matches.group(1).replace(',','') #
+price_without_comma = matches.group(1).replace(',','') #removes comma from string
 price_num = float(price_without_comma)
 print(type(price_num))
+
+test_exp = "ayush 12 prabha13 namu34 mamu15 is20 14 5 2"
+search_exp = "([0-9])"
+result = re.findall(search_exp, test_exp)
+print(matches.group(0))
